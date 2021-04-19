@@ -25,6 +25,9 @@ var lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
 var myArray = [["first nested array", 7], ["second nested array", 0]];
 var myData = myArray[0]; //first element from myArray
 
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]); //adds the element at the end of the array
+
 // Multi-Dimensional Arrays
 var arr = [
   [1,2,3],
