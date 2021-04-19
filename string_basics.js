@@ -31,6 +31,9 @@ myArray.push(["dog", 3]); //adds the element at the end of the array
 var threeArr = [1, 4, 6];
 var oneDown = threeArr.pop(); //removes the last element from the threeArr and stores it as a variable oneDown
 
+var ourArray = ["Stimpson", "J", "cat"];
+var removedFromOurArray = ourArray.shift(); //removes the first element from ourArray and stores it as a variable
+
 // Multi-Dimensional Arrays
 var arr = [
   [1,2,3],
