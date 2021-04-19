@@ -15,3 +15,7 @@ Code	Output
 \f	form feed
 */
 console.log(myStr);
+
+// Getting a specific letter from a string
+var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
