@@ -15,6 +15,7 @@ Code	Output
 \f	form feed
 */
 console.log(myStr); //variable printed in the console
+//console.log();
 
 // Getting a specific letter from a string
 var lastName = "Lovelace";
