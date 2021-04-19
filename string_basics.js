@@ -22,3 +22,4 @@ var lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
 
 // Arrays - like lists
 var myArray = [["first nested array", 7], ["second nested array", 0]];
+var myData = myArray[0]; //first element from myArray
