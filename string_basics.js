@@ -28,6 +28,9 @@ var myData = myArray[0]; //first element from myArray
 var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog", 3]); //adds the element at the end of the array
 
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop(); //removes the last element from the threeArr and stores it as a variable oneDown
+
 // Multi-Dimensional Arrays
 var arr = [
   [1,2,3],
