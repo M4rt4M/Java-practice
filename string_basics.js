@@ -33,6 +33,7 @@ var oneDown = threeArr.pop(); //removes the last element from the threeArr and s
 
 var ourArray = ["Stimpson", "J", "cat"];
 var removedFromOurArray = ourArray.shift(); //removes the first element from ourArray and stores it as a variable
+ourArray.unshift("Happy"); //adds an element at the beginning of the list; now ourArray = ["Happy", "J", "cat"]
 
 // Multi-Dimensional Arrays
 var arr = [
