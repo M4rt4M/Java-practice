@@ -14,7 +14,7 @@ Code	Output
 \b	word boundary
 \f	form feed
 */
-console.log(myStr);
+console.log(myStr); //variable printed in the console
 
 // Getting a specific letter from a string
 var lastName = "Lovelace";
