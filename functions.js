@@ -4,3 +4,9 @@ function functionName() { //define function
 }
 
 functionName(); //call function
+
+//Multiple arguments
+function functionWithArgs(x, y) {
+  console.log(x+y);
+}
+functionWithArgs(2,9)
