@@ -46,10 +46,3 @@ arr[3];
 arr[3][0];
 arr[3][0][1];
 //arr[3] is [[10, 11, 12], 13, 14], arr[3][0] is [10, 11, 12], and arr[3][0][1] is 11.
-
-// Functions
-function functionName() { //define function
-  console.log("Hello World");
-}
-
-functionName(); //call function
