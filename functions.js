@@ -21,3 +21,20 @@ function timesFive(num) {
   return num * 5;
 }
 var answer = timesFive(5); //=25
+
+// Functions without 'return' - for changing global variables rather than returning a value
+// Setup
+var sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+function addFive() {
+  sum = sum + 5;
+}
+
+addThree();
+addFive();
+console.log(addThree()); //undefined
+console.log(sum); // 0 + 3 + 5 = 8
