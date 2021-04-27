@@ -38,3 +38,14 @@ addThree();
 addFive();
 console.log(addThree()); //undefined
 console.log(sum); // 0 + 3 + 5 = 8
+
+//NB Variables declared with the let keyword can have Block Scope, which is useful for re-declaring variables. 
+//Variables declared inside a block {} cannot be accessed from outside the block:
+
+var x = 10;
+// Here x is 10
+{
+  let x = 2;
+  // Here x is 2
+}
+// Here x is 10 
