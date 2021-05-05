@@ -15,6 +15,7 @@ console.log(equalityTest('3', 3)); // Equal
 Strict equality (===) is the counterpart to the equality operator (==). 
 However, unlike the equality operator, which attempts to convert both values being compared to a common type, 
 the strict equality operator does not perform a type conversion.
+The != performs a conversion, while !== doe not conver the type of the value.
 */
 
 function strictEqualityTest(val1, val2) {
