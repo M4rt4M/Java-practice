@@ -37,13 +37,9 @@ typeof '3' //returns 'string'
 // && = AND 
 
 function testLogicalAnd(val) {
-  // Only change code below this line
-
   if (val <=50 && val >= 25) {
     return "Yes";
   }
-
-  // Only change code above this line
   return "No";
 }
 
@@ -53,17 +49,24 @@ testLogicalAnd(3);
 // || = OR
 
 function testLogicalOr(val) {
-  // Only change code below this line
-
   if (val < 10 || val > 20) {
     return "Outside";
   }
-
-
-  // Only change code above this line
   return "Inside";
 }
 
 testLogicalOr(15);
 testLogicalOr(155);
 
+// ELSE
+function testElse(val) {
+  var result = "";
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+  return result;
+}
+
+testElse(4);
