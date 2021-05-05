@@ -33,3 +33,9 @@ typeof 3 //returns 'number'
 typeof '3' //returns 'string'
 
 // Comparisons with the logical operator: && = AND 
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+
