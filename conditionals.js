@@ -12,7 +12,7 @@ console.log(equalityTest(1, "1")); // Equal
 console.log(equalityTest('3', 3)); // Equal
 
 /*
-Strict (in)equality (=== and !==) is the counterpart to the (in)equality operator (== and !=). 
+Strict (in)equality (=== and !==) is the counterpart to the (in)equality operator (== != >< >= <=). 
 However, unlike the equality operator, which attempts to convert both values being compared to a common type, 
 the strict equality operator does not perform a type conversion.
 */
