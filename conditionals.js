@@ -31,3 +31,5 @@ console.log(equalityTest('3', 3)); // Not equal
 
 typeof 3 //returns 'number'
 typeof '3' //returns 'string'
+
+// Comparisons with the logical operator: && = AND 
