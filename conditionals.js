@@ -28,3 +28,6 @@ onsole.log(equalityTest(1, 1)); // Equal
 console.log(equalityTest(1, 2)); // Not equal
 console.log(equalityTest(1, "1")); // Not equal
 console.log(equalityTest('3', 3)); // Not equal
+
+typeof 3 //returns 'number'
+typeof '3' //returns 'string'
