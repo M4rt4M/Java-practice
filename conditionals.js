@@ -32,7 +32,9 @@ console.log(equalityTest('3', 3)); // Not equal
 typeof 3 //returns 'number'
 typeof '3' //returns 'string'
 
-// Comparisons with the logical operator: && = AND 
+// Comparisons with the logical operators
+
+// && = AND 
 
 function testLogicalAnd(val) {
   // Only change code below this line
@@ -47,4 +49,21 @@ function testLogicalAnd(val) {
 
 testLogicalAnd(30);
 testLogicalAnd(3);
+
+// || = OR
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+testLogicalOr(155);
 
