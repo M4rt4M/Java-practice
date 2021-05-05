@@ -34,8 +34,17 @@ typeof '3' //returns 'string'
 
 // Comparisons with the logical operator: && = AND 
 
-if (num > 5 && num < 10) {
-  return "Yes";
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <=50 && val >= 25) {
+    return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
 }
-return "No";
+
+testLogicalAnd(30);
+testLogicalAnd(3);
 
