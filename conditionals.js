@@ -118,7 +118,6 @@ Think of it like the final else statement in an if/else chain.*/
 
 function switchOfStuff(val) {
   var answer = "";
-  // Only change code below this line
   switch (val) {
     case "a":
       answer = "apple";
@@ -132,8 +131,7 @@ function switchOfStuff(val) {
     default:
       answer = "stuff";
       break;
-}
-  // Only change code above this line
+  }
   return answer;
 }
 
