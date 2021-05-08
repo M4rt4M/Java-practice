@@ -69,8 +69,8 @@ console.log(nextInLine(testArr, 6)); // 1
 console.log("After: " + JSON.stringify(testArr)); // After: [2,3,4,5,6]
 
 // You can return Boolean values from functions
-// You can return the Boolean values from Functions 
 function isEqual(a,b) {
   return a === b;
 }
 
+// When a return statement is reached, the execution of the current function stops and control returns to the calling location.
