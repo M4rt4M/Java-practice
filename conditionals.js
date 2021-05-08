@@ -110,6 +110,8 @@ function caseInSwitch(val) {
   return answer;
 }
 
+// remember about BREAK; after each set of statements
+
 console.log(caseInSwitch(1)); //"alpha"
 
 /* In a switch statement you may not be able to specify all possible values as case statements. 
