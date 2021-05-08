@@ -67,3 +67,10 @@ var testArr = [1,2,3,4,5];
 console.log("Before: " + JSON.stringify(testArr)); // Before: [1,2,3,4,5]
 console.log(nextInLine(testArr, 6)); // 1
 console.log("After: " + JSON.stringify(testArr)); // After: [2,3,4,5,6]
+
+// You can return Boolean values from functions
+// You can return the Boolean values from Functions 
+function isEqual(a,b) {
+  return a === b;
+}
+
