@@ -11,6 +11,7 @@ Do NOT reset count to 0 when value is 7, 8, or 9.
 Do NOT return an array.
 Do NOT include quotes (single or double) in the output.
 
+From https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/counting-cards
 */
 
 var count = 0;
