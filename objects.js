@@ -20,4 +20,5 @@ var myObj = {
 var prop1val = myObj.prop1; //* myObj["prop1"];
 var prop2val = myObj.prop2; //* myObj["prop2"];
 
+//* for property names with a space you can only use square brackets, e.g. myObj["the first property"];
 
