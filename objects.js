@@ -17,6 +17,7 @@ var myObj = {
   prop1: "val1",
   prop2: "val2"
 };
-var prop1val = myObj.prop1;
-var prop2val = myObj.prop2;
+var prop1val = myObj.prop1; //* myObj["prop1"];
+var prop2val = myObj.prop2; //* myObj["prop2"];
+
 
