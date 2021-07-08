@@ -22,3 +22,12 @@ var prop2val = myObj.prop2; //* myObj["prop2"];
 
 //* for property names with a space you can only use square brackets, e.g. myObj["the first property"];
 
+/* Another use of bracket notation on objects is to access a property which is stored as the value of a variable. 
+This can be very useful for iterating through an object's properties or when accessing a lookup table. */
+
+var dogs = {
+  Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
+};
+var myDog = "Hunter";
+var myBreed = dogs[myDog];
+console.log(myBreed);
