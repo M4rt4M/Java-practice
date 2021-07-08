@@ -26,8 +26,15 @@ var prop2val = myObj.prop2; //* myObj["prop2"];
 This can be very useful for iterating through an object's properties or when accessing a lookup table. */
 
 var dogs = {
-  Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
+  Fido: "Mutt",  
+  Hunter: "Doberman",  
+  Snoopie: "Beagle"
 };
 var myDog = "Hunter";
 var myBreed = dogs[myDog];
-console.log(myBreed);
+console.log(myBreed); //* returns "Doberman"
+
+//* Changing properties of an object
+
+dogs.Fido = "Golden Retriever"; //* OR
+dogs["Fido"] = "Yorkshire Terrior";
