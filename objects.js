@@ -34,7 +34,7 @@ var myDog = "Hunter";
 var myBreed = dogs[myDog];
 console.log(myBreed); //* returns "Doberman"
 
-//* Changing properties of an object
+//* Changing OR adding new properties of an object
 
 dogs.Fido = "Golden Retriever"; //* OR
 dogs["Fido"] = "Yorkshire Terrier";
