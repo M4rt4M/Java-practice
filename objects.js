@@ -38,3 +38,7 @@ console.log(myBreed); //* returns "Doberman"
 
 dogs.Fido = "Golden Retriever"; //* OR
 dogs["Fido"] = "Yorkshire Terrier";
+
+//* Deleting a property
+
+delete dogs.Hunter;
