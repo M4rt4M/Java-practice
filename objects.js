@@ -39,6 +39,12 @@ console.log(myBreed); //* returns "Doberman"
 dogs.Fido = "Golden Retriever"; //* OR
 dogs["Fido"] = "Yorkshire Terrier";
 
+dogs["Yeontan"] = "Pomeranian";
+
 //* Deleting a property
 
 delete dogs.Hunter;
+
+//* .hasOwnProperty(propname) for checking if property exists within an object
+
+
