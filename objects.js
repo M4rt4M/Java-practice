@@ -20,7 +20,7 @@ var myObj = {
 var prop1val = myObj.prop1; //* myObj["prop1"];
 var prop2val = myObj.prop2; //* myObj["prop2"];
 
-//* for property names with a space you can only use square brackets, e.g. myObj["the first property"];
+// for property names with a space you can only use square brackets, e.g. myObj["the first property"];
 
 /* Another use of bracket notation on objects is to access a property which is stored as the value of a variable. 
 This can be very useful for iterating through an object's properties or when accessing a lookup table. */
@@ -41,10 +41,18 @@ dogs["Fido"] = "Yorkshire Terrier";
 
 dogs["Yeontan"] = "Pomeranian";
 
-//* Deleting a property
+// Deleting a property
 
 delete dogs.Hunter;
 
-//* .hasOwnProperty(propname) for checking if property exists within an object
+// .hasOwnProperty(propname) for checking if property exists within an object
 
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return (checkProp);
+  }
+  return "Not Found";
+}
 
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house")); // Not Found
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet")); // kitten
