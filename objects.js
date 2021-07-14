@@ -49,7 +49,7 @@ delete dogs.Hunter;
 
 function checkObj(obj, checkProp) {
   if (obj.hasOwnProperty(checkProp)) {
-    return (checkProp);
+    return (obj[checkProp]);
   }
   return "Not Found";
 }
