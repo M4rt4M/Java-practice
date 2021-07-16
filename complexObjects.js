@@ -15,3 +15,43 @@ var ourMusic = [ // complex data structure is an array, so needs []
     "gold": true //comma after every property of the object except for the last one
   } 
 ];
+
+// Accessing nested objects
+
+ar ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+console.log(ourStorage.cabinet["top drawer"].folder2); //secrets
+console.log(ourStorage.desk.drawer); //stapler
+
+// Accessing nested arrays
+
+var ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+console.log(ourPets[0].names[1]); //Fluffy
+console.log(ourPets[1].names[0]); //Spot
