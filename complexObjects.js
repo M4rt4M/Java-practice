@@ -55,3 +55,5 @@ var ourPets = [
 ];
 console.log(ourPets[0].names[1]); //Fluffy
 console.log(ourPets[1].names[0]); //Spot
+
+// Use [] when the keys/properties are stored as values
