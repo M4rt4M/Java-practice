@@ -18,5 +18,10 @@ for (var i = 0; i < 5; i++) {
   ourArray.push(i);
 } //ourArray will now have the value [0,1,2,3,4]
 
+// Iterate through an array
 
+var arr = [10, 9, 8, 7, 6];
+for (var i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
 
