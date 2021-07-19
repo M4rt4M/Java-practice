@@ -36,4 +36,16 @@ for (var i=0; i < arr.length; i++) {
   }
 }
 
-// DO...WHILE and WHILE
+// DO {} WHILE () loop will execute once before checking the condition
+// and WHILE (){} will only start executing if the condition is met in the first place
+
+// Recursion
+
+// Fuction that multiplies first n elements of an array and returns the product of this multiplication
+function multiply(arr, n) {
+    if (n <= 0) { // base case employed if no recursion has happened or used in recursion
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1]; // n-1 because count is between 1st [0] and nth [n-1] elements
+    }
+  }
