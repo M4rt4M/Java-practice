@@ -79,9 +79,10 @@ var contacts = [
     }
 ];
 
+/* The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
+If both are true, then return the "value" of that property. */
 
 function lookUpProfile(name, prop) {
-  // Only change code below this line
     for (var i = 0; i < contacts.length; i++) {
         if (name == contacts[i]["firstName"]) {
             if (contacts[i].hasOwnProperty(prop)) {
@@ -92,5 +93,4 @@ function lookUpProfile(name, prop) {
         } 
     }
     return "No such contact";
-  // Only change code above this line
 }
