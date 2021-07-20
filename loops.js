@@ -49,3 +49,48 @@ function multiply(arr, n) {
       return multiply(arr, n - 1) * arr[n - 1]; // n-1 because count is between 1st [0] and nth [n-1] elements
     }
   }
+
+// PRACTICE
+
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+    for (var i = 0; i < contacts.length; i++) {
+        if (name == contacts[i]["firstName"]) {
+            if (contacts[i].hasOwnProperty(prop)) {
+                return contacts[i][prop];
+            } else {
+                return "No such property";
+            }
+        } 
+    }
+    return "No such contact";
+  // Only change code above this line
+}
