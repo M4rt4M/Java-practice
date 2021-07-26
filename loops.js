@@ -94,3 +94,22 @@ function lookUpProfile(name, prop) {
     }
     return "No such contact";
 }
+
+// Recursion + a ? b : c conditionals
+function countdown(n){
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1); //variable cannot be changed
+    countArray.unshift(n);
+    return countArray;
+  }
+}
+console.log(countdown(3));
+
+function rangeOfNumbers(startNum, endNum) {
+  return startNum === endNum
+    ? [startNum]
+    : rangeOfNumbers(startNum, endNum - 1).concat(endNum); //merges two or more arrays
+};
+console.log(rangeOfNumbers(1,7));
