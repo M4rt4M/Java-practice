@@ -56,3 +56,9 @@ function checkObj(obj, checkProp) {
 
 console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house")); // Not Found
 console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet")); // kitten
+
+// ES6
+// Use let instead of var to declare a variable that cannot be changed
+// If let is used inside a block, statement or expression, it only applies to that part
+// const works in a similar way, but it's a read-only variable; typially should be declared with all caps
+// Objects declared with let or const are still mutable, but you cannot use the variable identifier to point to a different array using the assignment operator
