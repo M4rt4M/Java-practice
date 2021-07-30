@@ -94,3 +94,8 @@ const myFunc = () => { // ...is equivalent to this in ES6: <function name = () =
 as well as the brackets surrounding the code. This helps simplify smaller functions into one-line statements: */
 
 const myFunc = () => "value";
+
+// If an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted:
+
+const doubler = item => item * 2;
+
