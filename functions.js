@@ -99,3 +99,13 @@ const myFunc = () => "value";
 
 const doubler = item => item * 2;
 
+/* In order to help us create more flexible functions, ES6 introduces default parameters for functions.
+The default parameter kicks in when the argument is not specified (it is undefined).
+ou can add default values for as many parameters as you want. */
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+console.log(greeting("John")); // prints "Hello John"
+console.log(greeting()); // prints "Hello Anonymous"
+
+
+
