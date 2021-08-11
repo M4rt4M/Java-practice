@@ -99,13 +99,36 @@ const myFunc = () => "value";
 
 const doubler = item => item * 2;
 
-/* In order to help us create more flexible functions, ES6 introduces default parameters for functions.
+/* In order to help us create more flexible functions, ES6 introduces DEFAULT PARAMETERS for functions.
 The default parameter kicks in when the argument is not specified (it is undefined).
 ou can add default values for as many parameters as you want. */
 
 const greeting = (name = "Anonymous") => "Hello " + name;
 console.log(greeting("John")); // prints "Hello John"
 console.log(greeting()); // prints "Hello Anonymous"
+
+/* ES6 introduces the REST PARAMETER for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. 
+These arguments are stored in an array that can be accessed later from inside the function. The rest parameter eliminates the need to check the args array 
+and allows us to apply map(), filter() and reduce() on the parameters array.*/
+
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2)); //You have passed 3 arguments.
+console.log(howMany("string", null, [1, 2, 3], { })); //You have passed 4 arguments.
+
+//Like above, but written as an arrow function
+const howMany = (...args) => "You have passed " + args.length + " arguments.";
+
+//Sum of all arguments
+const sum = (...args) => {
+  let total = 0;
+  for (let i=0; i < args.length; i++) {
+    total +=args[i];
+  }
+  return total;
+}
+
 
 
 
