@@ -129,6 +129,16 @@ const sum = (...args) => {
   return total;
 }
 
+/* ES6 introduces the SPREAD OPERATOR, which allows us to expand arrays and other expressions in places where multiple parameters or elements are expected. 
+(...arr) returns an unpacked array. In other words, it spreads the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. */
 
+//So, this
+var arr = [6, 89, 3, 45];
+var maximus = Math.max.apply(null, arr);//89
 
+//Can be similified to this
+const maximus = Math.max(...arr); //89
+
+//You can copy the contents of one array to another this way
+let arr2 = [...arr];
 
