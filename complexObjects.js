@@ -97,5 +97,26 @@ function updateRecords(records, id, prop, value) {
   return records; //Your function must always return the entire record collection object
 }
 
+// ES6
+
+// Destructuring Assignment
+
+const user = { name: 'John Doe', age: 34 };
+
+// ES5 example
+const name = user.name; //John Doe
+const age = user.age; //34
+
+// ES6 equivalent
+const { name, age } = user; //name = 'John Doe' and age = 34
+
+/* Destructuring allows you to assign a new variable name when extracting values. 
+You can do this by putting the new name after a colon when assigning the value. */
+const { name: userName, age: userAge } = user; //now, userName = 'John Doe' and userAge = 34
+
+//NB This is used to collect values from object's properties; it does not change the original object
+
+
+
 
 
