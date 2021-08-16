@@ -164,4 +164,9 @@ const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
 console.log(a, b); // 1 2
 console.log(arr); // [3, 4, 5, 7] - whatever comes after the rest parameter <...>
 
+// Combine rest parameter with destructuring assignment to skip some elements and assign the rest to another variable
+const list = [1, 3, 'a', 'b', 5, 3, 2, 6, 'd'];
+const [,,...arr] = list;
+console.log(arr); //['a', 'b', 5, 3, 2, 6, 'd']
+
 
