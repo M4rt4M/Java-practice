@@ -3,4 +3,4 @@ From <a href = "https://www.freecodecamp.org/learn/javascript-algorithms-and-dat
 
 # External links
 <a href = "https://www.freecodecamp.org/m4rt4m">My FCC profile</a><br>
-<img src=https://www.codewars.com/users/M4rt4M/badges/small>
+<a href = "https://www.codewars.com/users/M4rt4M"><img src=https://www.codewars.com/users/M4rt4M/badges/small></a>
