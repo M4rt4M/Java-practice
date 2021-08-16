@@ -80,7 +80,6 @@ var recordCollection = {
   }
 };
 
-// Only change code below this line
 function updateRecords(records, id, prop, value) {
   if (prop != "tracks" && value != "") { //If prop isn't tracks and value isn't an empty string, update or set that album's prop to value
     records[id][prop] = value;
@@ -114,9 +113,20 @@ const { name, age } = user; //name = 'John Doe' and age = 34
 You can do this by putting the new name after a colon when assigning the value. */
 const { name: userName, age: userAge } = user; //now, userName = 'John Doe' and userAge = 34
 
-//NB This is used to collect values from object's properties; it does not change the original object
+// NB This is used to collect values from object's properties; it does not change the original object
 
+// Using Destructuring Assignment to Assign Variables from Nested Objects
 
+const user = {
+  johnDoe: { 
+    age: 34,
+    email: 'johnDoe@freeCodeCamp.com'
+  }
+};
+
+const { johnDoe: { age: userAge, email: userEmail }} = user; //userAge = 34 and userEmail = 'johnDoe@freeCodeCamp.com'
+
+// Use Destructuring Assignment to Assign Variables from Arrays
 
 
 
