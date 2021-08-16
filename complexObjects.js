@@ -156,5 +156,12 @@ console.log(a, b, c); //1 2 5
 [a, b, c] = [b, c, a];
 console.log(a, b, c); //2 5 1
 
+// Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+
+/* In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array.
+The result is similar to Array.prototype.slice(). */
+const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(a, b); // 1 2
+console.log(arr); // [3, 4, 5, 7] - whatever comes after the rest parameter <...>
 
 
