@@ -62,6 +62,8 @@ const greeting = `Hello, my name is ${person.name}!
 I am ${person.age} years old.`; // ${variable} is a placeholder, you won't have to use concatenation with the + operator anymore
 // The string is multi-line, both in the code and the output. This saves inserting \n within strings.
 
+console.log(greeting); /* "Hello, my name is Zodiac Hasbro!
+                           I am 56 years old." */
 
-console.log(greeting);
+// NB. You can use it to create a list of items with some common parts, e.g. a menu on your website
 
