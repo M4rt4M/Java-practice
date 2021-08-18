@@ -228,3 +228,4 @@ const novel = new Book('anonymous'); // declare an object based on construction(
 novel.writer = 'newAuthor'; //change object's property
 console.log(novel.writer); // return variable of the property
 
+// Good example here https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-use-getters-and-setters-to-control-access-to-an-object/301220
