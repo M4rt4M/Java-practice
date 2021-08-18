@@ -75,3 +75,5 @@ const getMousePosition = (x, y) => ({ // this...
 //ES6
 const getMousePosition = (x, y) => ({ x, y }); // ...can be simplified to this
 
+// This type of function returns an object with parameters x and y, from two variables x and y
+
