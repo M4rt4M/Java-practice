@@ -208,11 +208,12 @@ const half = ({max, min}) => (max + min) / 2.0;
 /* You can obtain values from an object and set the value of a property within an object. These are classically called getters and setters.
 GETTER functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable.
 SETTER functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. 
-This change could involve calculations, or even overwriting the previous value completely. */
+This change could involve calculations, or even overwriting the previous value completely. 
+[!] Getters and setters are important because they hide internal implementation details. */
 
 class Book {
   constructor(author) {
-    this._author = author;
+    this._author = author; // It is convention to precede the name of a private variable with an underscore (_). However, the practice itself does not make a variable private.
   }
   // getter
   get writer() {
