@@ -129,3 +129,27 @@ const sum = (...args) => {
   return total;
 }
 
+// Concise Declarative Functions with ES6
+
+//ES5
+const person = {
+  name: "Taylor",
+  sayHello: function() {
+    return "Hello! My name is " + person.name + ".";
+  }
+};
+
+console.log(person.sayHello()); 
+
+//ES6
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+
+console.log(person.sayHello()); //same result in both cases: Hello! My name is Taylor.
+
+
+
