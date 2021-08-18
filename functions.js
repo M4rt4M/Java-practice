@@ -51,13 +51,9 @@ var x = 10;
 // Here x is 10 
 
 function nextInLine(arr, item) {
-  // Only change code below this line
   arr.push(item);
   var item = arr.shift();
   return item;
-  // Only change code above this line
-  
-
 }
 
 // Setup
@@ -75,7 +71,8 @@ function isEqual(a,b) {
 
 // When a return statement is reached, the execution of the current function stops and control returns to the calling location.
 
-// ES6
+////////////////////// ES6 ///////////////////////////////////////////////////////////////////////////
+
 /* Anonymous functions: 
 In JavaScript, we often don't need to name our functions, especially when passing a function as an argument to another function. 
 Instead, we create inline functions. We don't need to name these functions because we do not reuse them anywhere else. */
@@ -151,5 +148,28 @@ const person = {
 
 console.log(person.sayHello()); //same result in both cases: Hello! My name is Taylor.
 
+// Use class Syntax to Define a Constructor Function
+
+/* ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, 
+and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+In ES5, we usually define a constructor function and use the new keyword to instantiate an object. 
+The class syntax simply replaces the constructor function creation. */
+
+//ES5
+var SpaceShuttle = function(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+
+//ES6
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus = new SpaceShuttle('Jupiter');
+
+/*It should be noted that the class keyword declares a new function, to which a constructor is added. 
+This constructor is invoked when new is called to create a new object. */
 
 
