@@ -46,3 +46,22 @@ arr[3];
 arr[3][0];
 arr[3][0][1];
 //arr[3] is [[10, 11, 12], 13, 14], arr[3][0] is [10, 11, 12], and arr[3][0][1] is 11.
+
+// ES6
+
+/* A new feature of ES6 is the template literal. This is a special type of string that makes creating complex strings easier.
+Template literals allow you to create multi-line strings and to use string interpolation features to create strings.*/
+
+const person = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
+
+// The example uses backticks (`), not quotes (' or "), to wrap the string.
+const greeting = `Hello, my name is ${person.name}! 
+I am ${person.age} years old.`; // ${variable} is a placeholder, you won't have to use concatenation with the + operator anymore
+// The string is multi-line, both in the code and the output. This saves inserting \n within strings.
+
+
+console.log(greeting);
+
