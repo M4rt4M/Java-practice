@@ -96,7 +96,17 @@ function updateRecords(records, id, prop, value) {
   return records; //Your function must always return the entire record collection object
 }
 
-// ES6
+////////////////////////// ES6 /////////////////////////////////////////////////////////
+
+/ES5
+const getMousePosition = (x, y) => ({ // this...
+  x: x,
+  y: y
+});
+
+//ES6
+const getMousePosition = (x, y) => ({ x, y }); // ...can be simplified to this
+// This type of function returns an object with parameters x and y, from two variables x and y
 
 // Destructuring Assignment
 
@@ -193,4 +203,29 @@ const stats = {
 const half = (stats) => (stats.max + stats.min) / 2.0; //can be simpified to
 const half = ({max, min}) => (max + min) / 2.0; 
 
+// Use getters and setters to Control Access to an Object
 
+/* You can obtain values from an object and set the value of a property within an object. These are classically called getters and setters.
+GETTER functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable.
+SETTER functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. 
+This change could involve calculations, or even overwriting the previous value completely. 
+[!] Getters and setters are important because they hide internal implementation details. */
+
+class Book {
+  constructor(author) {
+    this._author = author; // It is convention to precede the name of a private variable with an underscore (_). However, the practice itself does not make a variable private.
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book('anonymous'); // declare an object based on construction()
+novel.writer = 'newAuthor'; //change object's property
+console.log(novel.writer); // return variable of the property
+
+// Good example here https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-use-getters-and-setters-to-control-access-to-an-object/301220

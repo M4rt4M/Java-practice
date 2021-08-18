@@ -159,7 +159,7 @@ The class syntax simply replaces the constructor function creation. */
 var SpaceShuttle = function(targetPlanet){
   this.targetPlanet = targetPlanet;
 }
-var zeus = new SpaceShuttle('Jupiter');
+var zeus = new SpaceShuttle('Jupiter'); 
 
 //ES6
 class SpaceShuttle {
@@ -170,6 +170,7 @@ class SpaceShuttle {
 const zeus = new SpaceShuttle('Jupiter');
 
 /*It should be noted that the class keyword declares a new function, to which a constructor is added. 
-This constructor is invoked when new is called to create a new object. */
+This constructor is invoked when new is called to create a new object. More to come with OOP.
+[!] UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle used above. */
 
 

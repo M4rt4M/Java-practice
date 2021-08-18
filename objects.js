@@ -65,15 +65,3 @@ console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet")); // k
 // Objects declared with let or const are still mutable, but you cannot use the variable identifier to point to a different array using the assignment operator
 
 // Concise Object Literal Declarations Using Object Property Shorthand
-
-//ES5
-const getMousePosition = (x, y) => ({ // this...
-  x: x,
-  y: y
-});
-
-//ES6
-const getMousePosition = (x, y) => ({ x, y }); // ...can be simplified to this
-
-// This type of function returns an object with parameters x and y, from two variables x and y
-
