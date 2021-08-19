@@ -24,3 +24,11 @@ import { sum } from './functions.js';
 The ./ tells the import to look for the functions.js file in the same folder as the current file. 
 The relative file path (./) and file extension (.js) are required when using import in this way. */
 
+/* Suppose you have a file and you wish to import all of its contents into the current file. This can be done with the <import * as> syntax. */
+
+import * as myImportedFunctions from './functions.js';
+/* The above import statement will create an object called myImportedFunctions. This is just a variable name, you can name it anything. 
+The object will contain all of the exports from math_functions.js in it, so you can access the functions like you would any other object property. */
+
+myImportedFunctions.myFunc(7);
+myImportedFunctions.sum(7, 11, -3, 44);
