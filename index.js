@@ -17,6 +17,23 @@ export { add }; // ...like this
 You can export multiple things by repeating the first example for each thing you want to export, 
 or by placing them all in the export statement. */
 
+// Create an Export Fallback with export default
+
+/* Above, you learned about the syntax referred to as a named export. This allowed you to make multiple functions and variables available for use in other files.
+There is another export syntax you need to know, known as export default. Usually you will use this syntax if only one value is being exported from a file. 
+It is also used to create a fallback value for a file or module. Below are examples using export default: */
+
+export default function add(x, y) { //a named function
+  return x + y;
+}
+
+export default function(x, y) { //an anonymous function
+  return x + y;
+}
+
+/* Since export default is used to declare a fallback value for a module or file, you can only have one value be a default export in each module or file. 
+Additionally, you cannot use export default with var, let, or const. */
+
 // IMPORTING
 import { sum } from './functions.js';
 
