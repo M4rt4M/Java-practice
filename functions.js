@@ -173,4 +173,21 @@ const zeus = new SpaceShuttle('Jupiter');
 This constructor is invoked when new is called to create a new object. More to come with OOP.
 [!] UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle used above. */
 
+// PROMISE
+
+/* A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. 
+When the task completes, you either fulfill your promise or fail to do so. Promise is a constructor function, so you need to use the new keyword to create one. 
+It takes a function, as its argument, with two parameters - resolve and reject. These are methods used to determine the outcome of the promise. 
+<resolve> is used when you want your promise to succeed, and <reject> is used when you want it to fail. */
+
+const myPromise = new Promise((resolve, reject) => {
+  if(condition here) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected");
+  }
+});
+
+/* The example above uses strings for the argument of these functions, but it can really be anything. 
+Often, it might be an object, that you would use data from, to put on your website or elsewhere. */
 
