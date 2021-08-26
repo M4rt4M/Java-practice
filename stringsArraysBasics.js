@@ -35,6 +35,8 @@ var ourArray = ["Stimpson", "J", "cat"];
 var removedFromOurArray = ourArray.shift(); //removes the first element from ourArray and stores it as a variable
 ourArray.unshift("Happy"); //adds an element at the beginning of the list; now ourArray = ["Happy", "J", "cat"]
 
+// Summary: add/remove at the beginning - unshift/shift, at the end - push/pop
+
 // Multi-Dimensional Arrays
 var arr = [
   [1,2,3],
