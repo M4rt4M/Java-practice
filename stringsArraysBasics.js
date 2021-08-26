@@ -35,7 +35,8 @@ var ourArray = ["Stimpson", "J", "cat"];
 var removedFromOurArray = ourArray.shift(); //removes the first element from ourArray and stores it as a variable
 ourArray.unshift("Happy"); //adds an element at the beginning of the list; now ourArray = ["Happy", "J", "cat"]
 
-// Summary: add/remove at the beginning - unshift/shift, at the end - push/pop
+// Summary: add/remove at the beginning - <unshift/shift>, at the end - <push/pop>
+// <unshift('a')> and <push("dog", 3)> can take multiple arguments, <shift()/pop()> don't take arguments, they just remove 1 element at the beginning/end
 
 // Multi-Dimensional Arrays
 var arr = [
