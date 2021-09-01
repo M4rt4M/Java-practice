@@ -25,6 +25,8 @@ var lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
 var myArray = [["first nested array", 7], ["second nested array", 0]];
 var myData = myArray[0]; //first element from myArray
 
+// EDITING ARRAYS
+
 var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog", 3]); //adds the element at the end of the array
 
@@ -38,6 +40,10 @@ ourArray.unshift("Happy"); //adds an element at the beginning of the list; now o
 // Summary: add/remove at the beginning - <unshift/shift>, at the end - <push/pop>
 // <unshift('a')> and <push("dog", 3)> can take multiple arguments
 // <shift()/pop()> don't take arguments, they just remove 1 element at the beginning/end; however, this element can be assigned to a variable
+
+// SPLICE(index_start, how many elements including the one at index_start) - allows us to remove any number of consecutive elements from anywhere in an array
+
+
 
 // Multi-Dimensional Arrays
 var arr = [
