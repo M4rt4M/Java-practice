@@ -41,7 +41,7 @@ ourArray.unshift("Happy"); //adds an element at the beginning of the list; now o
 // <unshift('a')> and <push("dog", 3)> can take multiple arguments
 // <shift()/pop()> don't take arguments, they just remove 1 element at the beginning/end; however, this element can be assigned to a variable
 
-// SPLICE(index_start, how many elements including the one at index_start) - allows us to remove any number of consecutive elements from anywhere in an array
+// SPLICE(index_start, how many elements including the one at index_start to remove, what to insert instead (one or more)) - allows us to remove any number of consecutive elements from anywhere in an array
 
 let array = ['today', 'was', 'not', 'so', 'great'];
 array.splice(2, 2); // ['today', 'was', 'great']
@@ -50,7 +50,6 @@ array.splice(2, 2); // ['today', 'was', 'great']
 
 let array = ['I', 'am', 'feeling', 'really', 'happy'];
 let newArray = array.splice(3, 2); // ['really', 'happy']
-
 
 // Multi-Dimensional Arrays
 var arr = [
