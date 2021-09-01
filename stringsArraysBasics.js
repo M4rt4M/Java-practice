@@ -43,6 +43,13 @@ ourArray.unshift("Happy"); //adds an element at the beginning of the list; now o
 
 // SPLICE(index_start, how many elements including the one at index_start) - allows us to remove any number of consecutive elements from anywhere in an array
 
+let array = ['today', 'was', 'not', 'so', 'great'];
+array.splice(2, 2); // ['today', 'was', 'great']
+
+// <splice()> not only modifies the array it's being called on, but it also returns a new array containing the value of the removed elements
+
+let array = ['I', 'am', 'feeling', 'really', 'happy'];
+let newArray = array.splice(3, 2); // ['really', 'happy']
 
 
 // Multi-Dimensional Arrays
