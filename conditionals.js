@@ -183,4 +183,4 @@ function checkSign(num) {
   return (num > 0) ? "positive" 
     : (num < 0) ? "negative" 
     : "zero";
-}
+} // N.B. Remember that the ES6 shorthand conditional should be within the return statement

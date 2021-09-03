@@ -65,7 +65,14 @@ arr[3][0];
 arr[3][0][1];
 //arr[3] is [[10, 11, 12], 13, 14], arr[3][0] is [10, 11, 12], and arr[3][0][1] is 11.
 
-// ES6
+// Check For The Presence of an Element With indexOf()
+
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+fruits.indexOf('dates'); //returns -1
+fruits.indexOf('oranges'); // returns 2
+fruits.indexOf('pears'); // returns 1 (the first index at which the element exists)
+
+///////////////// ES6 ////////////////////////////////////////////
 
 /* A new feature of ES6 is the template literal. This is a special type of string that makes creating complex strings easier.
 Template literals allow you to create multi-line strings and to use string interpolation features to create strings.*/
@@ -85,3 +92,7 @@ console.log(greeting); /* "Hello, my name is Zodiac Hasbro!
 
 // NB. You can use it to create a list of items with some common parts, e.g. a menu on your website
 
+// Combine Arrays with the Spread Operator
+
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander']; // thatArray = ['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']
