@@ -58,6 +58,37 @@ console.log(ourPets[1].names[0]); //Spot
 
 // Use [] when the value-key pairs/properties are stored as variables
 
+// Add Key-Value Pairs to JavaScript Objects
+
+const tekkenCharacter = {
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true
+};
+
+// dot notation 
+tekkenCharacter.origin = 'South Korea';
+
+// bracket notation
+tekkenCharacter['hair color'] = 'dyed orange'; /* Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. 
+In the above case, the property is enclosed in quotes to denote it as a string and will be added exactly as shown. 
+Without quotes, it will be evaluated as a variable and the name of the property will be whatever value the variable is. */
+
+// Check if an Object has a Property (using <in> or <hasOwnProperty()>
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+users.hasOwnProperty('Alan'); // returns true
+'Alan' in users; // returns true
+
 // ***Record Collection Exercise***
 // Setup
 var recordCollection = {
@@ -95,22 +126,6 @@ function updateRecords(records, id, prop, value) {
   }
   return records; //Your function must always return the entire record collection object
 }
-
-// Add Key-Value Pairs to JavaScript Objects
-
-const tekkenCharacter = {
-  player: 'Hwoarang',
-  fightingStyle: 'Tae Kwon Doe',
-  human: true
-};
-
-// dot notation 
-tekkenCharacter.origin = 'South Korea';
-
-// bracket notation
-tekkenCharacter['hair color'] = 'dyed orange'; /* Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. 
-In the above case, the property is enclosed in quotes to denote it as a string and will be added exactly as shown. 
-Without quotes, it will be evaluated as a variable and the name of the property will be whatever value the variable is. */
 
 ////////////////////////// ES6 /////////////////////////////////////////////////////////
 
