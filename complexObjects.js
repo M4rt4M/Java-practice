@@ -75,6 +75,7 @@ In the above case, the property is enclosed in quotes to denote it as a string a
 Without quotes, it will be evaluated as a variable and the name of the property will be whatever value the variable is. */
 
 // Check if an Object has a Property (using <in> or <hasOwnProperty()>
+
 let users = {
   Alan: {
     age: 27,
@@ -88,6 +89,23 @@ let users = {
 
 users.hasOwnProperty('Alan'); // returns true
 'Alan' in users; // returns true
+
+// Iterate Through the Keys of an Object
+
+function countOnline(usersObj) {
+  let i = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online) {i+=1};
+  }
+  return i;
+}
+
+console.log(countOnline({
+  Alan: {online: false},
+  Jeff: {online: true},
+  Sarah: {online: false}
+}
+)); // returns 1
 
 // ***Record Collection Exercise***
 // Setup
