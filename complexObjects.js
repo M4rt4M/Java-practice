@@ -145,6 +145,9 @@ function updateRecords(records, id, prop, value) {
   return records; //Your function must always return the entire record collection object
 }
 
+// Return all keys within an object with Object.keys()
+console.log(Object.keys(recordCollection));
+
 ////////////////////////// ES6 /////////////////////////////////////////////////////////
 
 /ES5
