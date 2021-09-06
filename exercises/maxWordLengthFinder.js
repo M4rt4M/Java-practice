@@ -54,6 +54,6 @@ function findLongestWordLength4(str) {
   // if words has multiple elements, remove the first element and recursively call the function
   return Math.max(
     words[0].length,
-    findLongestWordLength(words.slice(1).join(" "))
+    findLongestWordLength4(words.slice(1).join(" "))
   );
 }
