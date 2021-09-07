@@ -12,4 +12,14 @@ const str = 'The quick brown fox jumps over the lazy dog.';
 const words = str.split(' ');
 console.log(words[3]); // expected output: "fox"
 
+// Checking the type of the variable
+var a = 5;
+if(typeof a == "number") // typeof : This checks whether the value is one of the primitive data types. It will return a string specifying the type — "undefined" / "string" / "number" / "boolean" / "object" etc.
+	console.log("Numeric value");
+else
+	console.log("Not a number");
+
+/* instanceof : This checks the "kind" of an object. For example, Javascript arrays are basically objects. Using this we can check whether a given value represents an array.
+instanceof will return a boolean true / false depending on whether the value is an instance of a given object or not. */
+
 // Operations on arrays: .map
