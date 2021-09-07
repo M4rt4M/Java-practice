@@ -52,6 +52,7 @@ let array = ['I', 'am', 'feeling', 'really', 'happy'];
 let newArray = array.splice(3, 2); // newArray = ['really', 'happy']; array = ['I', 'am', 'feeling']
 
 // SLICE(start_index, stop_index(not included)) - copies designated part of the array to a new array
+// N.B. can be used on strings too
 
 // Multi-Dimensional Arrays
 var arr = [
