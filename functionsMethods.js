@@ -12,6 +12,11 @@ const str = 'The quick brown fox jumps over the lazy dog.';
 const words = str.split(' ');
 console.log(words[3]); // expected output: "fox"
 
+// Sorting - array.prototype.sort() by default sorts strings in alphabetical order
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b}); // returns array in ascending order
+
 // Checking the type of the variable
 
 /* typeof : This checks whether the value is one of the primitive data types. 
